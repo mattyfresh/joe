@@ -1,6 +1,11 @@
-body{
+:root{
 
 	background-color: white;
+	color: black;
+	padding: 0;
+	margin: 0;
+	/*opacity: .4;*/
+	
 	/*background-image: url("images/joeFace.jpg");*/
 
 }
@@ -8,9 +13,12 @@ body{
 header{
 
 	position: absolute;
+	top: 0px;
 	height: 70px;
 	width: 100%;
-	background-color: lightgrey;
+	background-color: rgba(242, 160, 64, 0.71);
+	/*opacity: .5;*/
+	color: black;
 
 
 }
@@ -29,12 +37,13 @@ header{
 
 	display: inline-block;
 	margin: 10px;
-	color: grey;
+	color: black;
 	line-height: 22px;
 	font-size: 16px;
 	margin-right: 30px;
-	-webkit-transition: color 1s; /* For Safari 3.1 to 6.0 */
-	transition: color 1s;
+	cursor: pointer;
+	-webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+	transition: color .5s;
 }
 
 li:hover{
@@ -44,24 +53,25 @@ li:hover{
 }
 
 #name {
-	font-family: helvetica;
+	font-family: copperplate gothic;
 	position: absolute;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	top: 25%;
 	left: 10%;
 	font-size: 2em;
-	color: white;
-	-webkit-animation-duration: 3s;
+	color: black;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 5s;
 
 }
 
 #name span {
 
-	font-family: times helvetica;
+	font-family: copperplate;
 	font-style: italic;
 	font-size: 12px;
 	font-weight: none;
-	color: grey;
+	color: black;
 
 }
 
@@ -70,6 +80,7 @@ li:hover{
 	top: 10%;
 	width: 100%;
 	height: 90%;
+
 	
 }
 
@@ -81,6 +92,7 @@ li:hover{
 	text-align: center;
 	width: 100%;
 	line-height: 70px;
+	position: relativce;
 
 	
 	-webkit-transition: color 5s; /* For Safari 3.1 to 6.0 */
@@ -101,7 +113,7 @@ li:hover{
 	width:220px;
 	left: 50%;
 	height: 240px;
-	margin: 0 0 0 -110px;
+	margin: 0 0 0 -116px;
 	background-image: url("../images/joeFace.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -117,12 +129,95 @@ li:hover{
 	line-height: 50px;
 	top: 220px;
 	font-size: 1.25em;
+	margin-bottom: 40px;
+	display: block;
+
+}
+#slide {
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: 3s;
+
+}
+#slide2 {
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 5s;
+
 }
 
-#slide {
-	-webkit-animation-delay: 1s;
-	-webkit-animation-duration: 3s;
+#carousel{
+
+	position: absolute;
+	height: 400px;
+	width: 98%;
+	top: 60%;
+	left: 4%;
 	
+	overflow: none;
+
+}
+
+.carousel {
+
+	list-style-type: none;
+	position: absolute;
+	top: 60%;
+}
+
+/*#jump {
+
+	width: 96%;
+	left: 4%;
+	overflow: none;
+	border-radius: 20px;
+	
+
+}*/
+
+@media screen and (max-width: 970px) {
+
+	#name {
+
+		font-size: 1.5em;
+		left: 5%;
+
+
+	}
+
+	.menu li {
+
+		margin-right: 20px;
+		font-size: 12px;
+
+	}
+
+}
+
+@media screen and (max-width: 790px) {
+
+	.menu {
+
+		display: none;
+	}
+
+	#carousel {
+
+		position: absolute;
+		top: 70%;
+	}
+
+
+}
+
+@media screen and (max-width: 485px) {
+
+	#carousel {
+
+		position: absolute;
+		top: 80%;
+
+	}
+
+
 }
 
 
