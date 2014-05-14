@@ -12,15 +12,15 @@
 <meta name="keywords" content="theatre, awesome, Joe Cappelli, actor, faggot, banana">
 
 <!-- CSS -->
-
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
 
 <!-- JS -->
 <script src="js/jquery-2.0.0.min.js"></script>
 <script src="js/modernizr.js"></script>
-<script src="js/barousel.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 
 
 
@@ -83,6 +83,19 @@
 
 	</section>
 
+	<!-- box slider -->
+
+
+<section>
+
+	<ul class="bxslider">
+
+		<li> <img src="images/awkward.jpeg"> </li>
+		<li> <img src="images/spread-eagle.jpeg"> </li>
+		<li> <img src="images/leap.jpeg"> </li>
+		<li> <img src="images/pole-position.jpeg"> </li>
+
+	</ul>
 	
 
 
@@ -99,18 +112,10 @@ $('#name').addClass('animated fadeInLeft');
 $('#slide').addClass('animated fadeInLeft');
 
 $('#slide2').addClass('animated pulse');
+
+$('.bxslider').bxSlider();
 	
-
-	// barousel stufff
-
-	$('#photos').barousel({
-		manualCarousel: 1
-	});
 });	
-
-
-
-
 
 </script>
 

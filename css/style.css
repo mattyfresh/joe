@@ -46,7 +46,7 @@ header{
 	transition: color .5s;
 }
 
-li:hover{
+.menu li:hover{
 
 	text-decoration: none;
 	color: white;
@@ -141,15 +141,14 @@ li:hover{
 
 }
 
-#carousel{
+.bxslider {
 
 	position: absolute;
-	height: 400px;
-	width: 98%;
 	top: 60%;
-	left: 4%;
-	
-	overflow: none;
+	left: 0px;
+	height: 100%;
+	width: 90%;
+	list-style-type: none;
 
 }
 
