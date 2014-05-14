@@ -144,7 +144,7 @@ header{
 .bxslider {
 
 	position: absolute;
-	top: 60%;
+	top: 40%;
 	left: 0px;
 	height: 100%;
 	width: 90%;
@@ -152,7 +152,22 @@ header{
 
 }
 
+#awk-picture {
+	background-position: center no-repeat;
+	height: 100px;
+	width: 100px;
+	z-index: 100000;
+	top: 300px;
+}
 
+#shadow-area {
+
+	position: absolute;
+	top:90%;
+	left:10%;
+}
+
+/*box slider HELP*/
 
 /*Media Queries!!*/
 

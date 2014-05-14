@@ -16,11 +16,13 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/shadowbox.css">
 
 <!-- JS -->
 <script src="js/jquery-2.0.0.min.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
+<script src="js/shadowbox.js"></script>
 
 
 
@@ -86,16 +88,18 @@
 	<!-- box slider -->
 
 
-<section>
+ <section>
 
-	<ul class="bxslider">
+ 	<div id="shadow-area">
 
-		<li> <img src="images/awkward.jpeg"> </li>
-		<li> <img src="images/spread-eagle.jpeg"> </li>
-		<li> <img src="images/leap.jpeg"> </li>
-		<li> <img src="images/pole-position.jpeg"> </li>
+		<a href="images/awkward.jpeg" rel="shadowbox[Joe]" id="awkward"><img id="awk-picture" src="images/awkward.jpeg"></a> 
+		<a href="images/spread-eagle.jpeg" rel="shadowbox[Joe]">Spreadsies </a>
+	<!-- 	<li> <img id="leap" src="images/leap.jpeg"> </li>
+		<li> <img id="pole-position" src="images/pole-position.jpeg"> </li> -->
 
-	</ul>
+	</div>
+
+ </section>
 	
 
 
@@ -111,9 +115,12 @@ $('#name').addClass('animated fadeInLeft');
 
 $('#slide').addClass('animated fadeInLeft');
 
-$('#slide2').addClass('animated pulse');
+// $('#slide2').addClass('animated pulse');
 
 $('.bxslider').bxSlider();
+
+
+Shadowbox.init();
 	
 });	
 
