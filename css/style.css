@@ -100,12 +100,6 @@ li:hover{
 	
 }
 
-#tagline:hover{
-
-	color: pink;
-	
-	
-}
 
 .headshot{
 	position: absolute;
@@ -131,9 +125,12 @@ li:hover{
 	font-size: 1.25em;
 	margin-bottom: 40px;
 	display: block;
+	background-color: rgba(242, 160, 64, 0.71);
 
 }
 #slide {
+
+
 	-webkit-animation-delay: 2s;
 	-webkit-animation-duration: 3s;
 
@@ -156,22 +153,9 @@ li:hover{
 
 }
 
-.carousel {
 
-	list-style-type: none;
-	position: absolute;
-	top: 60%;
-}
 
-/*#jump {
-
-	width: 96%;
-	left: 4%;
-	overflow: none;
-	border-radius: 20px;
-	
-
-}*/
+/*Media Queries!!*/
 
 @media screen and (max-width: 970px) {
 

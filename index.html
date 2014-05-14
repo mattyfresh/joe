@@ -20,7 +20,7 @@
 <!-- JS -->
 <script src="js/jquery-2.0.0.min.js"></script>
 <script src="js/modernizr.js"></script>
-<script src="js/jcarousel.js"></script>
+<script src="js/barousel.js"></script>
 
 
 
@@ -65,7 +65,7 @@
 
 		
 
-				<div class="headshot">
+		<div class="headshot">
 
 				</div>
 					<div id="aboutMe">
@@ -83,26 +83,7 @@
 
 	</section>
 
-	<section id="photos">
-
-		<div class="jcarousel">
-			
-			<ul class="carousel">
-
-				<li><img src=""></li>
-				<li><img src=""></li>
-				<li><img src=""></li>
-				<li><img src=""></li>
-
-			
-			</ul>
-		</div>
-
 	
-
-	</section>
-
-
 
 
 <!-- JS STUFF -->
@@ -117,8 +98,14 @@ $('#name').addClass('animated fadeInLeft');
 
 $('#slide').addClass('animated fadeInLeft');
 
-// $('#slide2').addClass('animated pulse');
+$('#slide2').addClass('animated pulse');
 	
+
+	// barousel stufff
+
+	$('#photos').barousel({
+		manualCarousel: 1
+	});
 });	
 
 
