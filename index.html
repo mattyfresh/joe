@@ -49,7 +49,7 @@
 
 			<ul class="menu">
 
-				<li>Home</li>
+				<a href="#shadow-area"><li>Home</li></a>
 				<li>Mission</li>
 				<li>Resume</li>
 				<li>Contact</li>
@@ -92,11 +92,11 @@
 
  	<div id="shadow-area">
 
-		<a href="images/awkward.jpeg" rel="shadowbox[Joe]" id="awkward"><img id="awk-picture" src="images/awkward.jpeg"></a> 
-		<a href="images/spread-eagle.jpeg" rel="shadowbox[Joe]">Spreadsies </a>
-	<!-- 	<li> <img id="leap" src="images/leap.jpeg"> </li>
-		<li> <img id="pole-position" src="images/pole-position.jpeg"> </li> -->
-
+		<a href="images/awkward.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/awkward.jpeg"></a> 
+		<a href="images/spread-eagle.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/spread-eagle.jpeg"></a>
+		<a href="images/jump.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/jump.jpeg"></a>
+		<a href="images/pole-position.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/pole-position.jpeg"></a>
+	
 	</div>
 
  </section>
@@ -111,13 +111,16 @@
 
 $(document).ready(function() {
 
+// animate.css **********************
+
 $('#name').addClass('animated fadeInLeft');
 
 $('#slide').addClass('animated fadeInLeft');
 
-// $('#slide2').addClass('animated pulse');
+$('.fade').addClass('animated fadeIn');
 
-$('.bxslider').bxSlider();
+
+// shadowbox ***********************
 
 
 Shadowbox.init();

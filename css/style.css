@@ -152,12 +152,15 @@ header{
 
 }
 
-#awk-picture {
+.awk-picture {
 	background-position: center no-repeat;
-	height: 100px;
-	width: 100px;
-	z-index: 100000;
+	height: 300px;
+	width: auto;
 	top: 300px;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 20px 10px 20px grey;
+	margin: 0 0 20px 30px;
 }
 
 #shadow-area {
@@ -167,9 +170,18 @@ header{
 	left:10%;
 }
 
-/*box slider HELP*/
+.fade {
 
-/*Media Queries!!*/
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 6s;
+
+
+}
+
+
+
+
+/***********Media Queries!!********************/
 
 @media screen and (max-width: 970px) {
 
@@ -213,6 +225,11 @@ header{
 		position: absolute;
 		top: 80%;
 
+	}
+
+	.awk-picture {
+
+		margin-left: 60px;
 	}
 
 
