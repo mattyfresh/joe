@@ -152,6 +152,13 @@ header{
 
 }
 
+#shadow-area {
+
+	position: absolute;
+	top:550px;
+	left:13%;
+}
+
 .awk-picture {
 	background-position: center no-repeat;
 	height: 300px;
@@ -161,13 +168,16 @@ header{
 	border-radius: 10px;
 	box-shadow: 20px 10px 20px grey;
 	margin: 0 0 20px 30px;
+	transition: box-shadow 1s;
+	-webkit-transition: box-shadow 1s;
 }
 
-#shadow-area {
 
-	position: absolute;
-	top:90%;
-	left:10%;
+.awk-picture:hover {
+
+	box-shadow: 20px 10px 20px black;
+
+
 }
 
 .fade {
@@ -209,24 +219,15 @@ header{
 		display: none;
 	}
 
-	#carousel {
-
-		position: absolute;
-		top: 70%;
-	}
-
 
 }
 
 @media screen and (max-width: 485px) {
 
-	#carousel {
+	#shadow-area {
 
-		position: absolute;
-		top: 80%;
-
+		top: 620px;
 	}
-
 	.awk-picture {
 
 		margin-left: 60px;
