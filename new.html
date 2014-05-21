@@ -56,8 +56,13 @@
 
 		<p id="quote"> "If a cow ever got the chance, he'd eat you and everyone you care about." - <b>Troy McClure</b>
 		</p>
-
+		
 	</div>
+
+			<div id="border-scroll">
+				<!-- BORDER SCROLL IDEA -->
+			</div>
+
 
 	<div id="shadowbox-wrapper">
 
@@ -89,6 +94,13 @@
 		$('#headshot-wrapper').addClass('animated fadeIn');
 		$('.menu li').addClass('animated fadeIn');
 		$('.fade').addClass('animated fadeIn');
+
+		// AWESOME JQUERY EFFECT!!!!!
+		
+		$('#border-scroll').on('mouseenter', function () {
+
+			$(this).css({'left':'2000px'}, 3000);
+		});
 
 		// SHADOWBOX!!!!!
 		

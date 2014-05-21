@@ -63,6 +63,8 @@ li:hover {
 	-webkit-animation-delay: 1s;
 	-webkit-animation-duration: 3s;
 
+	/*border-bottom: 10px dashed;*/
+
 }
 #quote {
 	text-align: center;
@@ -71,12 +73,23 @@ li:hover {
 	border-bottom: none;
 	/*transition: border-bottom 3s;*/
 }
+#border-scroll {
 
+	height: 20px;
+	width: 100%;
+	position: relative;
+	background-image: url("../images/dashed.png");
+	left: 0px;
+	transition: left 5s;
+	margin-bottom: 30px;
 
-/*!!!!!!!!!!!animated bottom border idea!!!!!!!!*/
-/*#quote:hover {
-	border-bottom: 10px dashed;
+}
+/*#border-scroll:hover {
+	transition-timing-function: ease-out;
+	left: 2000px;
 }*/
+
+
 
 #shadowbox-wrapper {
 
@@ -111,7 +124,7 @@ li:hover {
 	top: 300px;
 	border: 2px solid black;
 	border-radius: 10px;
-	box-shadow: 1px 1px 20px black;
+	box-shadow: 1px 1px 10px black;
 	margin: 20px 0 20px 30px;
 	transition: box-shadow 1s;
 	-webkit-transition: box-shadow 1s;
