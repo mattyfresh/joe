@@ -92,8 +92,16 @@ li:hover {
 	background-color: lightblue;
 }
 
-#row1, #row2{
+#row1 {
 	width: 100%;
+	position: relative;
+	left: 16%;
+}
+
+#row2 {
+	width: 100%;
+	position: relative;
+	left: 15%;
 }
 
 .awk-picture {
@@ -103,7 +111,7 @@ li:hover {
 	top: 300px;
 	border: 2px solid black;
 	border-radius: 10px;
-	box-shadow: 20px 10px 20px grey;
+	box-shadow: 1px 1px 20px black;
 	margin: 20px 0 20px 30px;
 	transition: box-shadow 1s;
 	-webkit-transition: box-shadow 1s;
@@ -112,7 +120,7 @@ li:hover {
 
 .awk-picture:hover {
 
-	box-shadow: 20px 10px 20px black;
+	box-shadow: 10px 10px 20px black;
 }
 
 /*!!!!!!FADE IN EFFECT FOR IMAGES!!!!!!!!!*/
@@ -130,6 +138,17 @@ li:hover {
 
 	.menu li {
 		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	#row2 {
+		left: 0;
+	}
+
+
+		.larger-headshot {
+		width: 340px;
+		height: auto;
 	}
 
 }
