@@ -1,7 +1,13 @@
-body, h1, li{
+:root {
+	max-width: 1440px;
+}
+
+html, body, h1, li{
 
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+
 }
 header {
 	position: relative;
@@ -76,7 +82,7 @@ li:hover {
 #border-scroll {
 
 	height: 20px;
-	width: 100%;
+	width: 1440px;
 	position: relative;
 	background-image: url("../images/dashed.png");
 	left: 0px;
@@ -84,12 +90,6 @@ li:hover {
 	margin-bottom: 30px;
 
 }
-/*#border-scroll:hover {
-	transition-timing-function: ease-out;
-	left: 2000px;
-}*/
-
-
 
 #shadowbox-wrapper {
 
@@ -108,13 +108,13 @@ li:hover {
 #row1 {
 	width: 100%;
 	position: relative;
-	left: 16%;
+	left: 180px;
 }
 
 #row2 {
 	width: 100%;
 	position: relative;
-	left: 15%;
+	left: 160px;
 }
 
 .awk-picture {
@@ -154,12 +154,12 @@ li:hover {
 	}
 }
 @media screen and (max-width: 600px) {
+	
 	#row2 {
 		left: 0;
 	}
 
-
-		.larger-headshot {
+	.larger-headshot {
 		width: 340px;
 		height: auto;
 	}
