@@ -95,14 +95,23 @@ li:hover {
 
 	width: 100%;
 }
-#blue-wrapper, #blue-wrapper-two {
-	width: 100%;
-	background-color:white;
-	transition: background-color 1s;
-}
 
-#blue-wrapper:hover, #blue-wrapper-two:hover{
+#blue-wrapper{
+	width: 100%;
+	/*background-color:white;*/
+	transition: background-color 2s, box-shadow 2s;
+
+}
+	
+#blue-wrapper:hover{
 	background-color: lightblue;
+	box-shadow: 0px 10px 20px lightblue;
+
+}
+#blue-wrapper-two:hover{
+	background-color: lightblue;
+	box-shadow: 0px -10px 20px lightblue;
+
 }
 
 #row1 {
@@ -154,6 +163,11 @@ li:hover {
 	}
 }
 @media screen and (max-width: 600px) {
+
+	#row1 {
+
+		left: 60px;
+	}
 	
 	#row2 {
 		left: 0;
@@ -167,7 +181,7 @@ li:hover {
 }
 @media screen and (max-width: 500px) {
 	#quote {
-		font-size: 1.25em;
+		font-size: 1.1em;
 	}
 }
 
