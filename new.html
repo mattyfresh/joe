@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- META DATA -->
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Joseph Cappelli's personal portfolio page">
+<meta name="author" content="@MatthewFreshest">
+<meta name="keywords" content="theatre, awesome, Joe Cappelli, actor, faggot, banana">
+
+<!-- CSS -->
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/shadowbox.css">
+<link rel="stylesheet" href="css/new-main.css">
+
+<!-- JS -->
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/shadowbox.js"></script>
+
+	<title> Joe Cappelli - Portfolio</title>
+</head>
+<body>
+
+	<header>
+		<h1 id="name">
+			Joseph Cappelli
+		</h1>
+
+			<span id="secondary"> Actor, Peanut.</span>
+
+		
+
+		<nav>
+			<ul class="menu">
+
+				<li>Home</li>
+				<li>Mission</li>
+				<li>Resume</li>
+				<li>Contact</li>
+
+			</ul>
+
+		</nav>
+
+	</header>	
+
+
+	<div id="headshot-wrapper">
+
+		<p id="quote"> "If a cow ever got the chance, he'd eat you and everyone you care about." - <b>Troy McClure</b>
+		</p>
+
+	</div>
+
+	<div id="shadowbox-wrapper">
+
+		<div id="blue-wrapper">
+			<div id="row1">
+				<a href="images/awkward.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/awkward.jpeg"></a> 
+				<a href="images/spread-eagle.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/spread-eagle.jpeg"></a>
+				<a href="images/jump.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/jump.jpeg"></a>
+				<a href="images/pole-position.jpeg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/pole-position.jpeg"></a>
+			</div>
+		</div>
+		<div id="blue-wrapper-two">
+			<div id="row2">
+				<a href="images/headshot.jpg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/headshot.jpg"></a>
+				<a href="images/headshot.jpg" rel="shadowbox[Joe]"><img class="awk-picture fade" src="images/headshot.jpg"></a>
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$('#name').addClass('animated fadeInLeft');
+		$('#headshot-wrapper').addClass('animated fadeIn');
+		$('.menu li').addClass('animated fadeIn');
+		$('.fade').addClass('animated fadeIn');
+
+		// SHADOWBOX!!!!!
+		
+
+		Shadowbox.init();
+	});
+
+</script>
+</body>
+</html>
