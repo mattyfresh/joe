@@ -26,11 +26,6 @@
 <script src="js/jQuery2.1.1.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/jquery.swipebox.js"></script>
-<script src="js/quotes.js"></script>
-
-
-
-
 
 
 	<title> Joe Cappelli - Portfolio</title>
@@ -107,7 +102,7 @@
 		</div>
 		<div id="blue-wrapper-two">
 			<div id="row2">
-				<a href="img/Headshot.jpg" rel="gallery-one" class="swipe"><img class="awk-picture fade larger-headshot" src="img/headshot.jpg"></a>
+				<a href="img/Headshot.jpg" rel="gallery-one" class="swipe"><img class="awk-picture fade larger-headshot" src="img/Headshot.jpg"></a>
 
 
 			</div>
@@ -166,7 +161,7 @@
 		
 		var quotes = [one, two, three, four, five];
 
-		var rand = quotes[Math.round(Math.random() * quotes.length)];
+		var rand = quotes[Math.floor(Math.random() * quotes.length)];
 		
 		if(rand == undefined){
 
