@@ -20,12 +20,17 @@
 <link rel="stylesheet" href="css/new-main.css">
 <link rel="stylesheet" href="css/swipebox.css">
 
+
 <!-- JS -->
-<!-- <script src="js/jquery-2.0.0.min.js"></script> -->
+
 <script src="js/jQuery2.1.1.js"></script>
 <script src="js/modernizr.js"></script>
-<script src="js/shadowbox.js"></script>
 <script src="js/jquery.swipebox.js"></script>
+<script src="js/quotes.js"></script>
+
+
+
+
 
 
 	<title> Joe Cappelli - Portfolio</title>
@@ -64,6 +69,18 @@
 		<p id="quote"> "If a cow ever got the chance, he'd eat you and everyone you care about." - <b>Troy McClure</b>
 		</p>
 
+		<p id="quote-two"> "If I had a dollar for everytime I had a dollar... damn" - <b>@MatthewFreshest</b>
+		</p>
+
+		<p id="quote-three"> "Things are never so bad that they can't be made worse" - <b>Humphry Bogart</b>
+		</p>
+
+		<p id="quote-four"> "He was a wise man who invented beer" - <b>Plato</b>
+		</p>
+
+		<p id="quote-five"> "I hope you brought a change of clothes because your eyes are about to piss tears." - <b>Jean-Ralphio</b>
+		</p>
+
 	</div>
 
 
@@ -78,7 +95,7 @@
 			</div>
 
 
-	<div id="shadowbox-wrapper">
+	<div id="swipebox-wrapper">
 
 		<div id="blue-wrapper">
 			<div id="row1">
@@ -91,12 +108,20 @@
 		<div id="blue-wrapper-two">
 			<div id="row2">
 				<a href="img/Headshot.jpg" rel="gallery-one" class="swipe"><img class="awk-picture fade larger-headshot" src="img/headshot.jpg"></a>
-				<a href="img/headshot.jpg"  rel="gallery-one" class="swipe"><img class="awk-picture fade larger-headshot" src="img/headshot.jpg"></a>
+
+
 			</div>
 
 		</div>
 
+	</div>
 
+	<div id="about-me-wrapper">
+
+		<p id="about-me">
+			This is alittle bit about myself right down here at the bottom of the page.
+
+		</p>
 
 	</div>
 
@@ -126,18 +151,40 @@
 			$('#border-scroll').css({'left': '0px'}, 3000);
 		});
 
-		// SHADOWBOX************************
-		
-
-		// Shadowbox.init();
-
 		// LIGHTBOX*************************
 
 		$('.swipe').swipebox();
 
+			// ATTEMPT AT RANDOM QUOTE***************
+
+		
+		var one = $('#quote');
+		var two = $('#quote-two');
+		var three = $('#quote-three');
+		var four = $('#quote-four');
+		var five = $('#quote-five');
+		
+		var quotes = [one, two, three, four, five];
+
+		var rand = quotes[Math.round(Math.random() * quotes.length)];
+		
+		if(rand == undefined){
+
+			// Getting random value is undefined so we put this here in order to have a back-up...
+
+
+			// alert('showed undefined');
+			
+			two.show();
+		}
+
+		rand.show();
+			
+
+	
 
 	});
-
 </script>
+
 </body>
 </html>
