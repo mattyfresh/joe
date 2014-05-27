@@ -9,6 +9,17 @@ html, body, h1, li{
 	overflow-x: hidden;
 
 }
+
+a {
+
+	text-decoration: none;
+	color: black;
+	transition: color .25s;
+}
+ a:hover {
+
+ 	color: lightblue;
+ }
 header {
 	position: relative;
 	height: 60px;
@@ -89,7 +100,7 @@ li:hover {
 	-webkit-animation-delay: 3s;
 	-webkit-animation-duration: 3s;
 }
-#quote, #quote-two, #quote-three, #quote-four, #quote-five {
+.rand-quotes {
 	text-align: center;
 	font-size: 1.5em;
 	border-bottom: none;
@@ -168,10 +179,26 @@ li:hover {
 
 #about-me {
 
+	position: relative;
 	text-align: center;
 	font-size: 1.5em;
 	font-family: times;
 	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	padding: 20px;
+	margin: 20px 0;
+
+}
+#about-me::before {
+
+	content:'';
+	position: absolute;
+	height: 43px;
+	width: 44px;
+	background: url('../img/quotes.png') no-repeat;
+	left: 0;
+	top: 0;
+
 }
 
 
