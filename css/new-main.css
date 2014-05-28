@@ -67,7 +67,7 @@ nav {
 	-webkit-transition: color .3s;
 
 }
-li:hover {
+#menu li:hover {
 
 	color: white;
 }
