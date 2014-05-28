@@ -63,16 +63,38 @@
 		<p class="rand-quotes" id="quote"> "If a cow ever got the chance, he'd eat you and everyone you care about." - <b>Troy McClure</b>
 		</p>
 
-		<p class="rand-quotes" id="quote-two"> "If I had a dollar for everytime I had a dollar... damn" - <b>@MatthewFreshest</b>
+		<p class="rand-quotes" id="quote-two"> "Call this an unfair generalization if you must..but old people are no good at everything."" - <b>Moe Sizlack</b>
 		</p>
 
-		<p class="rand-quotes" id="quote-three"> "Things are never so bad that they can't be made worse" - <b>Humphry Bogart</b>
+		<p class="rand-quotes" id="quote-three"> <b>"</b>For once maybe someone will call me "sir"
+ 		without adding, "You're making a scene."<b>"</b> - <b>Homer Simpson</b>
 		</p>
 
-		<p class="rand-quotes" id="quote-four"> "He was a wise man who invented beer" - <b>Plato</b>
+		<p class="rand-quotes" id="quote-four"> "Oh boy, sleep! That's where I'm a viking" - <b>Ralph Wiggum</b>
 		</p>
 
-		<p class="rand-quotes" id="quote-five"> "I hope you brought a change of clothes because your eyes are about to piss tears." - <b>Jean-Ralphio</b>
+		<p class="rand-quotes" id="quote-five"> "Two years, you’re still getting sorries? I don’t think so, that’s a long time for sorries. That’s like saying Happy New Year in October." - <b>Larry David</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-six"> "Hey, don't knock masturbation. It's sex with someone I love." - <b>Woody Allen</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-seven"> "There are two types of people in the world: People who say they pee in the shower and dirty fucking liars." - <b>Louis C.K.</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-eight"> "Everything that's difficult you should be able to laugh about." - <b>Louis C.K.</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-nine"> "The truth is, I can’t read anything with any distance. Every book is a self-help book to me. Just having them makes me feel better." - <b>Marc Maron</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-ten"> "My fault, my failure, is not in the passions I have, but in my lack of control of them." - <b>Jack Kerouac</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-eleven"> "Happiness consists in realizing it is all a great strange dream" - <b>Jack Kerouac</b>
+		</p>
+
+		<p class="rand-quotes" id="quote-twelve"> "The metamorphosis from rebellious to unique is recognition" - <b>Eric Morris</b>
 		</p>
 
 	</div>
@@ -115,12 +137,14 @@
 
 	
 
-			<h3><a href="http://tottext.com/portfolio" target="_blank">&#8482;@MattyFreshest</a></h3>
+			<h3 id="trademark"><a href="http://tottext.com/portfolio" target="_blank">&#8482;@MattyFreshest</a></h3>
 
 			<ul id="social-media">
-				
-				<li><a class="social-icons" href="#"><img src="img/twitter.png"></a></li>
-				<li><a class="social-icons" href="#"><img src="img/vine.png"></a></li>
+
+
+				<li><a class="social-icons" href="http://joecappellisaves.com" target="_blank"><img src="img/poetry.png"></li>
+				<li><a class="social-icons" href="https://twitter.com/cojappelli"><img src="img/twitter.png"></a></li>
+				<li><a class="social-icons" href="http://vinebox.co/u/wyP4c0GEn0Q"><img src="img/vine.png"></a></li>
 
 			<ul>
 
@@ -130,7 +154,7 @@
 
 	$(document).ready(function() {
 
-		// Animate CSS Stuff***************
+		// Animate CSS Stuff*****************
 
 		$('#name, #border-scroll').addClass('animated fadeInLeft');
 		$('#quote-container').addClass('animated fadeIn');
@@ -138,7 +162,7 @@
 		$('.menu li').addClass('animated fadeIn');
 		$('.fade').addClass('animated fadeIn');
 
-		// JQUERY EFFECT BORDER-SCROLL EFFECT
+		// JQUERY BORDER-SCROLL EFFECT*******
 
 		$('#border-scroll').on('mouseenter', function () {
 
@@ -152,12 +176,12 @@
 			$('#border-scroll').css({'left': '0px'}, 3000);
 		});
 
-		// LIGHTBOX*************************
+		// LIGHTBOX******************************
 
 		$('.swipe').swipebox();
 
 		
-		// ATTEMPT AT RANDOM QUOTE***************
+		//RANDOM QUOTE***************************
 
 		
 		var one = $('#quote');
@@ -165,8 +189,15 @@
 		var three = $('#quote-three');
 		var four = $('#quote-four');
 		var five = $('#quote-five');
+		var six = $('#quote-six');
+		var seven = $('#quote-seven');
+		var eight = $('#quote-eight');
+		var nine = $('#quote-nine');
+		var ten = $('#quote-ten');
+		var eleven = $('#quote-eleven');
+		var twelve = $('#quote-twelve');
 		
-		var quotes = [one, two, three, four, five];
+		var quotes = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve];
 
 		var rand = quotes[Math.floor(Math.random() * quotes.length)];
 

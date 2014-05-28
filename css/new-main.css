@@ -94,8 +94,23 @@ nav {
 
 }
 #quote-container {
+
+	margin-left: 20px;
+	margin-right: 20px;
+	/*border-bottom: 1px solid rgba(0,0,0,.1);*/
 	-webkit-animation-delay: 3s;
 	-webkit-animation-duration: 3s;
+}
+
+#quote-container:after {
+
+	content: "";
+	position: absolute;
+	width: 600px;
+	height: 2px;
+	left: 50%;
+	margin-left: -300px;
+	background-color: rgba(0,0,0,.2);
 }
 .rand-quotes {
 	text-align: center;
@@ -141,7 +156,11 @@ nav {
 	width: 100%;
 	position: relative;
 	left: 200px;
-	margin-bottom: 20px;
+	margin: 20px 0 20px 0;
+}
+
+.swipe {
+	display: inline-block;
 }
 
 .awk-picture {
@@ -209,18 +228,19 @@ footer {
 	height: 60px;
 }
 
-footer h3 {
+#trademark {
 
 	position: absolute;
 	left: 20px;
+	top: 16px;
 	width: 100%;
 	opacity: .6;
 	color: black;
+	font-size: 16px;
 	transition: opacity .75s;
-
 }
 
-footer h3:hover {
+#trademark:hover {
 
 	opacity: 1;
 }
@@ -279,8 +299,7 @@ footer h3:hover {
 
 		left: 60px;
 	}
-}
-@media screen and (max-width: 500px) {
+
 	#quote {
 		font-size: 1.1em;
 
@@ -292,6 +311,26 @@ footer h3:hover {
 	#row1 {
 
 		left: 30px;
+	}
+	#quote-container:after {
+		width: 200px;
+		margin-left: 0;
+		left: 50%;
+		margin-left: -100px;
+	}
+
+	#social-media li {
+
+		margin-right: 10px;
+
+	}
+	.social-icons {
+
+		opacity: 1;
+	}
+	#trademark {
+		
+		font-size: 12px;
 	}
 
 }
