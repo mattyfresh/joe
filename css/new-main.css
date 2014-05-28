@@ -16,10 +16,7 @@ a {
 	color: black;
 	transition: color .25s;
 }
- a:hover {
 
- 	color: grey;
- }
 header {
 	position: relative;
 	height: 60px;
@@ -218,6 +215,7 @@ footer h3 {
 	left: 20px;
 	width: 100%;
 	opacity: .6;
+	color: black;
 	transition: opacity .75s;
 
 }
@@ -271,7 +269,7 @@ footer h3:hover {
 
 @media screen and (max-width: 760px) {
 
-	.menu li {
+	#menu li {
 		display: none;
 	}
 }
