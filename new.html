@@ -41,7 +41,7 @@
 		
 
 		<nav>
-			<ul class="menu">
+			<ul id="menu">
 
 				<li>Home</li>
 				<li>Mission</li>
@@ -99,14 +99,6 @@
 				<a href="img/pole-position.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/pole-position.jpeg"></a>
 			</div>
 		</div>
-	<!-- 	<div id="blue-wrapper-two">
-			<div id="row2">
-				<a href="img/Headshot.jpg" rel="gallery-one" class="swipe"><img class="awk-picture fade larger-headshot" src="img/Headshot.jpg"></a>
-
-
-			</div>
-
-		</div> -->
 
 	</div>
 
@@ -121,13 +113,18 @@
 
 	<footer>
 
-		<div id="footer-container">
+	
 
-			<h3>&#8482;<a href="http://tottext.com/portfolio" target="_blank">@MattyFreshest</a></h3>
+			<h3><a href="http://tottext.com/portfolio" target="_blank">&#8482;@MattyFreshest</a></h3>
 
+			<ul id="social-media">
+				
+				<li><a class="social-icons" href="#"><img src="img/twitter.png"></a></li>
+				<li><a class="social-icons" href="#"><img src="img/vine.png"></a></li>
 
+			<ul>
 
-		</div>
+	</footer>
 
 <script type="text/javascript">
 
@@ -141,7 +138,7 @@
 		$('.menu li').addClass('animated fadeIn');
 		$('.fade').addClass('animated fadeIn');
 
-		// AWESOME JQUERY EFFECT************
+		// JQUERY EFFECT BORDER-SCROLL EFFECT
 
 		$('#border-scroll').on('mouseenter', function () {
 
@@ -172,16 +169,18 @@
 		var quotes = [one, two, three, four, five];
 
 		var rand = quotes[Math.floor(Math.random() * quotes.length)];
+
+		// Fail safe, not necessary after Math.floor fix****************************************************************************************
 		
-		if(rand == undefined){
+		// if(rand == undefined){
 
-			// Getting random value is undefined so we put this here as a back up...
+		// 	Getting random value is undefined so we put this here as a back up...
 
 
-			// alert('showed undefined');
+		// 	alert('showed undefined');
 			
-			two.show();
-		}
+		// 	two.show();
+		// }
 
 		rand.show();
 			
