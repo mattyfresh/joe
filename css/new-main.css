@@ -3,7 +3,7 @@
 	overflow-x: hidden;
 }
 
-html, body, h1, h2 h3, li, ul, a{
+html, body, h1, h2 h3, li, ul{
 
 	margin: 0;
 	padding: 0;
@@ -19,32 +19,39 @@ a {
 }
 
 header {
-	position: relative;
+	position: fixed;
 	height: 60px;
 	width: 100%;
 	background-color: lightblue;
-	/*margin-bottom: 10px;*/
+	opacity: .7;
+	z-index: 100;
+}
+
+header a {
+	position: relative;
+	left: 0;
+	top: 12px;
+	display: inline-block;
+	z-index: 100;
+	cursor: pointer;
 }
 
 #name {
 	font-family: copperplate gothic;
 	position: relative;
+	display: inline-block;
 	left: 20px;
 	top: 20%;
+	padding-right: 20px;
 	font-size: 2em;
 	-webkit-animation-delay: 1s;
 	-webkit-animation-duration: 5s;
 }
 
-#name a {
-
-	height: 100%;
-	display: block;
-}
 #secondary {
 	display: inline;
 	position: absolute;
-	left: 250px;
+	left: 270px;
 	top: 27px;
 }
 nav {
@@ -78,6 +85,7 @@ nav {
 }
 #top-border-scroll {
 
+	top: 60px;
 	height: 60px;
 	width: 1440px;
 	position: relative;
@@ -105,7 +113,7 @@ nav {
 	position: relative;
 	height: 100%;
 	width: 100%;
-	z-index: 1;
+	z-index: -100;
 }
 
 /*#circle-one {
@@ -127,8 +135,8 @@ nav {
 	opacity: .3;
 	border-radius: 50%;
 	z-index: -100;
-}*/
-/*#circle-three {
+}
+#circle-three {
 	position: fixed;
 	top: 10px;
 	left: 600px;
@@ -177,11 +185,6 @@ nav {
 	margin-bottom: 30px;
 }
 
-#swipebox-wrapper {
-
-	width: 100%;
-}
-
 #blue-wrapper{
 	width: 100%;
 	/*background-color:white;*/
@@ -205,6 +208,11 @@ nav {
 	position: relative;
 	left: 200px;
 	margin: 20px 0 20px 0;
+}
+#row1 a {
+
+	margin: none;
+	padding: none;
 }
 
 .swipe {
@@ -271,25 +279,13 @@ nav {
 #resume-container {
 
 	position:relative;
-	margin-top: 20px;
+	margin-top: 80px;
 	margin-bottom: 20px;
 	height: 100%;
 	width: 100%;
 	text-align: center;
-	z-index: -1;
 	display: none;
-	background-color:none;
-	-webkit-animation-delay: 2s;
-	-webkit-animation-duration: 3s;
-
-
-	transition: background-color 1s;
-}
-#resume-container:hover {
-
-	background-color: rgba(0,0,0,.2);
-
-}
+	}
 
 #resume-container h1 {
 
@@ -299,27 +295,43 @@ nav {
 }
 
 #resume {
-	opacity: .75;
+	opacity: 0;
 	position: relative;
-	border: 40px dashed rgba(0,0,0,.1);
-	transition: border .75s, opacity .5s;
+	border: 0 dashed rgba(0,0,0,.1);
+	-webkit-transition: border 1s;
 	cursor: pointer;
 }
 
 #resume:hover {
 
-	opacity: 1;
-	border: 60px dashed white;
+	border: 40px dashed rgba(0,0,0,.1);
+	-webkit-transition: border 1s;
+}
+
+#contact-container {
+
+	display: none;
+	opacity: 0;
+	position: relative;
+	text-align: center;
+	height: 100%;
+	margin-top: 80px;
 }
 
 
 footer {
 	background-color: lightblue;
-	opacity: 1;
+	opacity: .7;
 	padding: 10px;
 	width: 100%;
 	position: relative;
 	height: 60px;
+	transition: opacity .5s;
+}
+
+footer:hover {
+
+	opacity: 1;
 }
 
 #trademark {
@@ -367,7 +379,6 @@ footer {
 	transition: color .3s;
 	-webkit-transition: color .3s;
 }
-
 
 
 /*!!!!!!FADE IN EFFECT FOR IMAGES!!!!!!!!!*/
