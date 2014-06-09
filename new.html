@@ -51,8 +51,8 @@
 			<ul id="menu">
 
 				<li onClick="homeButt()" id="home">Home</li>
-				<li id="resume-button" onClick="resumeButt()">Resume</li>
-				<li onClick="contactButt()">Contact</li>
+				<li onClick="resumeButt()" id="resume-button" >Resume</li>
+				<li onClick="myLightBox()">Contact</li>
 
 			</ul>
 
@@ -146,7 +146,20 @@
 				<div id="about-me-wrapper">
 
 					<p id="about-me">
-						Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch Bacon BACON, eggs scratch, hard boiled, New ORLEANS paper batch.
+					Joseph Cappelli is a NYC based actor who has appeared in many off Broadway and Regional productions (Ghost of war at Theatre Row Studios, Paradise, Comedy of Errors), Television (I Married a Mobster) and commercials (FourSquare).
+					<br>
+					<br>
+					He is continually studying the Eric Morris System of acting with the great Anthony Vincent Bova, and is focusing on transitioning into comedy, voice-over, and commercial work.  Joe is also in the midst of writing an original comedic web series, which he is looking to produce by the end of 2014.
+					<br>
+					<br>
+					Joe suggests you head on over to his vine account to view a couple of belly laugh inducing videos (one of which was featured on the Huffington Post).
+					<br>
+					<br>
+					Until next time,
+					<br>
+					<br>
+					may your days be filled with candy coated delights and your nights be filled with ... OK.  I'll stop now.
+
 
 					</p>
 
@@ -157,20 +170,30 @@
 
 			<div id="resume-container">
 
-			
-				<p>This will be where my resume goes you filthy animal</p>
-
-
-
 				<a href="#"><img id="resume" src="img/resume.png"></a>
 
 			</div>
 
-			<div id="contact-container">
+			<!-- <div id="contact-container">
 
 				<h1>Get in touch with me.</h1>
 
 				<p> this is going to be where all of my contact info goes</p>
+
+			</div> -->
+
+			<div id="contact-div">
+
+				<h1>Get in touch with me Freeman</h1>
+
+				<ul id= "large-media-icons">
+
+					<li><img src="img/facebook-large.png"/></li>
+					<li><img src="img/twitter-large.png"/></li>
+					<li><img src="img/vine-large.png"/></li>
+
+				</ul>
+
 
 			</div>
 		</div>
@@ -291,19 +314,20 @@
 			$('#resume').animate({'opacity':'1'}, 1000);
 				
 		}
-				
 
-		function contactButt() {
+		function myLightBox() {
 
-			//hide the page except for header and footer
-			$('#primary').css({'display':'none'});
+			$('body').append($('#contact-div'));
+			$('#contact-div').show();
 
-			$('#primary-content-holder').append($('#contact-container'));
-			$('#resume').animate({'opacity':'0'});
-			$('#resume-container').hide();
+			$('#large-media-icons').animate({'opacity': '1'}, 1000);
 
-			$('#contact-container').show();
-			$('#contact-container').animate({'opacity': '1'}, 1000);
+
+			$('#contact-div').on('click', function() {
+
+				$('#contact-div').hide();
+			})
+
 		}
 
 </script>
