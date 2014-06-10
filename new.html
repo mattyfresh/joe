@@ -43,7 +43,7 @@
 		
 		
 
-		<span id="secondary"> Actor, Peanut.</span>
+		<span id="secondary">@cojappelli</span>
 
 		
 
@@ -52,7 +52,7 @@
 
 				<li onClick="homeButt()" id="home">Home</li>
 				<li onClick="resumeButt()" id="resume-button" >Resume</li>
-				<li onClick="myLightBox()">Contact</li>
+				<li onClick="myLightBox()" id="lightbox-button">Contact</li>
 
 			</ul>
 
@@ -174,28 +174,19 @@
 
 			</div>
 
-			<!-- <div id="contact-container">
-
-				<h1>Get in touch with me.</h1>
-
-				<p> this is going to be where all of my contact info goes</p>
-
-			</div> -->
-
 			<div id="contact-div">
-
-				<h1>Get in touch with me Freeman</h1>
 
 				<ul id= "large-media-icons">
 
-					<li><img src="img/facebook-large.png"/></li>
-					<li><img src="img/twitter-large.png"/></li>
-					<li><img src="img/vine-large.png"/></li>
+					<li><a href="https://www.facebook.com/joe.cappelli" target="_blank"><img src="img/facebook-large.png"/></a></li>
+					<li><a href="https://twitter.com/cojappelli" target="_blank"><img src="img/twitter-large.png"/></a></li>
+					<li><a href="http://vinebox.co/u/wyP4c0GEn0Q" target="_blank"><img src="img/vine-large.png"/></a></li>
 
 				</ul>
 
 
 			</div>
+
 		</div>
 
 	</div>
@@ -311,7 +302,7 @@
 			
 			$('#primary-content-holder').append($('#resume-container'));
 			$('#resume-container').show();
-			$('#resume').animate({'opacity':'1'}, 1000);
+			$('#resume').animate({'opacity':'1'}, 2000);
 				
 		}
 
@@ -320,13 +311,28 @@
 			$('body').append($('#contact-div'));
 			$('#contact-div').show();
 
-			$('#large-media-icons').animate({'opacity': '1'}, 1000);
+			$('#contact-div').animate({'opacity': '1'}, 1000);
 
+			setTimeout(function() {
+
+				$('#large-media-icons').animate({'opacity':'1'}, 1000)}, 2000);
+
+			
 
 			$('#contact-div').on('click', function() {
 
+				$('#contact-div').animate({'opacity': '0'}, 1000);
+				$('#large-media-icons').animate({'opacity': '0'}, 1000);
+
+
+				setTimeout(function() {
+
 				$('#contact-div').hide();
-			})
+
+				}, 2000);	
+				
+
+					});
 
 		}
 

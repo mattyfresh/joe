@@ -20,7 +20,7 @@ a {
 
 header {
 	position: fixed;
-	height: 60px;
+	height:60px;
 	width: 100%;
 	background-color: lightblue;
 	opacity: .7;
@@ -212,7 +212,7 @@ nav {
 #row1 {
 	width: 100%;
 	position: relative;
-	left: 200px;
+	left: 150px;
 	margin: 20px 0 20px 0;
 }
 #row1 a {
@@ -389,12 +389,13 @@ footer:hover {
 
 #contact-div {
 
-	position: absolute;
-	top: 100px;
+	position: fixed;
+	top: 0;
 	left: 0;
 	text-align: center;
-	height: 100%;
+	height: 2000px;
 	width: 100%;
+	opacity: 0;
 	background: rgba(0,0,0,.9);
 	background-size: cover;
 	display: none;
@@ -403,11 +404,10 @@ footer:hover {
 #large-media-icons {
 
 	position: relative;
-	top: 50%;
-	top-margin: -225px;
+	top: 200px;
 	height: 100%;
 	width: 100%;
-	margin: 0 auto;
+	margin: auto 0;
 	opacity: 0;
 }
 
@@ -418,6 +418,8 @@ footer:hover {
 	margin: 20px;
 	border: 2px dashed white;
 }
+
+
 
 
 /*!!!!!!FADE IN EFFECT FOR IMAGES!!!!!!!!!*/
@@ -431,19 +433,50 @@ footer:hover {
 
 /*MEDIA QUERIES*/
 
+@media screen and (max-width: 1000px) {
+
+	#large-media-icons {
+		top: 100px;
+	}
+
+	#large-media-icons img {
+		height: 200px;
+		width: auto;
+	}
+
+}
+
+
 @media screen and (max-width: 760px) {
 
 	#menu li {
 		display: none;
 	}
 
+	header a {
+
+		top: 18px;
+	}
+
 	#resume {
 		width: 60%;
 		height: auto;
 	}
+	#name {
+		font-size: 1.5em;
+	}
 	#secondary {
 		font-size: .75em;
-		top: 32px;
+		top: 28px;
+		left: 200px;
+	}
+
+	#large-media-icons {
+		top: 75px;
+	}
+	#large-media-icons img {
+		height: 150px;
+		width: auto;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -457,9 +490,7 @@ footer:hover {
 		font-size: 1.1em;
 
 	}
-	#secondary {
-		top: 22px;
-	}
+
 	#row1 {
 
 		left: 30px;
