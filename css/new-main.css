@@ -63,6 +63,8 @@ header a {
 	position: absolute;
 	left: 270px;
 	top: 27px;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 3s;
 }
 nav {
 
@@ -92,6 +94,10 @@ nav {
 #menu li:hover {
 
 	color: white;
+}
+#mobile-contact {
+	display: none;
+
 }
 #top-border-scroll {
 
@@ -456,6 +462,19 @@ footer:hover {
 	#menu li {
 		display: none;
 	}
+	#mobile-contact {
+		position: absolute;
+		display: inline-block;
+		right: 20px;
+		color: black;
+		cursor: pointer;
+		transition: color .5s;
+		-webkit-animation-delay: 1s;
+		-webkit-animation-duration: 3s;
+	}
+	#mobile-contact:hover {
+		color: white;
+	}
 
 	header #name {
 
@@ -479,7 +498,7 @@ footer:hover {
 		top: 50px;
 	}
 	#large-media-icons img {
-		height: 150px;
+		height: 75px;
 		width: auto;
 	}
 }
@@ -523,6 +542,12 @@ footer:hover {
 	#resume {
 
 		border: 40px dashed rgba(0,0,0,.1);
+	}
+	#secondary {
+		display: none;
+	}
+	footer{
+		opacity: 1;
 	}
 
 }
