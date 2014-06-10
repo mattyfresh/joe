@@ -36,10 +36,14 @@ header:hover {
 header a {
 	position: relative;
 	left: 0;
-	top: 12px;
+	top: 10px;
 	display: inline-block;
 	z-index: 100;
 	cursor: pointer;
+}
+#secondary a {
+
+	top: 0px !important;
 }
 
 #name {
@@ -453,9 +457,9 @@ footer:hover {
 		display: none;
 	}
 
-	header a {
+	header #name {
 
-		top: 18px;
+		top: 6px;
 	}
 
 	#resume {
@@ -467,12 +471,12 @@ footer:hover {
 	}
 	#secondary {
 		font-size: .75em;
-		top: 28px;
+		top: px;
 		left: 200px;
 	}
 
 	#large-media-icons {
-		top: 75px;
+		top: 50px;
 	}
 	#large-media-icons img {
 		height: 150px;
