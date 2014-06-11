@@ -94,7 +94,7 @@ nav {
 	display: none;
 
 }
-#top-border-scroll {
+/*#top-border-scroll {
 
 	top: 60px;
 	height: 60px;
@@ -104,7 +104,7 @@ nav {
 	left: 2000px;
 	transition: left 5s;
 	margin-bottom: 30px;
-}
+}*/
 #headshot-wrapper{
 	position: relative;
 	background-image: url("../img/Headshot.jpg");
@@ -161,7 +161,7 @@ nav {
 	border-radius: 50%;
 	z-index: -100;
 	-webkit-animation-delay: 1s;
-	-webkit-animation-duration: 3s;
+	-webkit-animation-duration: 4s;
 }
 
 
@@ -190,7 +190,7 @@ nav {
 	border-bottom: none;
 	display:none;
 }
-#border-scroll {
+/*#border-scroll {
 
 	height: 60px;
 	width: 1440px;
@@ -199,34 +199,40 @@ nav {
 	left: 0px;
 	transition: left 5s;
 	margin-bottom: 30px;
-}
+}*/
 
 #blue-wrapper{
 	width: 100%;
-	/*background-color:white;*/
-	transition: background-color 2s, box-shadow 2s;
+	border-top: 0px dashed white;
+	border-bottom: 0px dashed white;
+	transition: border-top .5s, border-bottom .5s;
 
 }
 	
 #blue-wrapper:hover{
-	background-color: lightblue;
-	box-shadow: -2px 10px 20px 1px lightblue, -2px -10px 20px 1px lightblue;
+	
+	border-top: 8px dashed white;
+	border-bottom: 8px dashed white;
 }
 
 #row1 {
 	width: 100%;
 	position: relative;
-	left: 150px;
+	/*left: 150px;*/
 	margin: 20px 0 20px 0;
 }
-#row1 a {
 
-	margin: none;
-	padding: none;
+#row1 ul {
+
+	text-align: center;
 }
 
-.swipe {
+#row1 li {
+
 	display: inline-block;
+	padding: 15px 20px;
+	/*padding-right: 20px;
+	padding-bottom: 15px;*/
 }
 
 .awk-picture {
@@ -237,7 +243,7 @@ nav {
 	border: 2px solid black;
 	border-radius: 10px;
 	box-shadow: 1px 1px 10px black;
-	margin: 10px 0 10px 30px;
+	/*margin: 10px 0 10px 30px;*/
 	transition: box-shadow 1s;
 	-webkit-transition: box-shadow 1s;
 }
@@ -245,13 +251,14 @@ nav {
 
 .awk-picture:hover {
 
-	box-shadow: 10px 10px 20px black;
+	box-shadow: 10px 10px 15px black;
 }
 
 #about-me-wrapper {
 
 	position: relative;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 
@@ -504,26 +511,17 @@ footer:hover {
 		top: 50px;
 	}
 	#large-media-icons img {
-		height: 75px;
+		height: 90px;
 		width: auto;
 	}
 }
 @media screen and (max-width: 600px) {
-
-	#row1 {
-
-		left: 60px;
-	}
 
 	#quote {
 		font-size: 1.1em;
 
 	}
 
-	#row1 {
-
-		left: 30px;
-	}
 	#quote-container:after {
 		width: 200px;
 		margin-left: 0;
@@ -543,7 +541,6 @@ footer:hover {
 	#trademark {
 		
 		font-size: 12px;
-		top:24px;
 	}
 	#resume {
 
