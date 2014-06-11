@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/new-main.css">
 <link rel="stylesheet" href="css/swipebox.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 
 <!-- JS -->
@@ -43,7 +45,7 @@
 		
 		
 
-		<span id="secondary"><a href="https://twitter.com/cojappelli" target="_blank">@cojappelli </a></span>
+		<a href="https://twitter.com/cojappelli" target="_blank"><h4 id="secondary">@cojappelli</h4></a>
 
 		
 
@@ -67,9 +69,9 @@
 
 			<div id="page-hider">
 
-						<div id="top-border-scroll">
-							<!-- TOP BORDER-SCROLL CALLBACK -->
-						</div>	
+						<!-- <div id="top-border-scroll">
+							TOP BORDER-SCROLL CALLBACK
+						</div>	 -->
 
 				<div id="quote-container">
 
@@ -114,24 +116,16 @@
 
 				<div id="headshot-wrapper">
 					<div id="headshot-background">
-					<!-- 	<div id="circle-one">
-
-						</div>
-						<div id="circle-two">
-
-						</div>
-						<div id="circle-three">
-
-						</div> -->
+						
 						
 						
 					</div>
 				</div>
 
-						<div id="border-scroll">
-							<!-- BORDER SCROLL IDEA -->
+						<!-- <div id="border-scroll">
+							BORDER SCROLL IDEA
 						</div>
-
+ 						-->
 
 					<div id="blue-wrapper">
 						<div id="row1">
@@ -163,6 +157,15 @@
 
 
 					</p>
+						<div id="circle-one">
+
+						</div>
+						<div id="circle-two">
+
+						</div>
+						<div id="circle-three">
+
+						</div>
 
 				</div>
 
@@ -224,20 +227,21 @@
 		$('.fade').addClass('animated fadeIn');
 		$('#secondary').addClass('animated fadeIn');
 		$('#mobile-contact').addClass('animated fadeInRight');
+		$('#circle-three').addClass('animated pulse');
 
 		// JQUERY BORDER-SCROLL EFFECT*******
 
-		$('#border-scroll').on('mouseenter', function () {
+		// $('#border-scroll').on('mouseenter', function () {
 
-			$(this).css({'left':'2000px'}, 3000);
-			$('#top-border-scroll').css({'left': '0px'}, 3000);
-		});
+		// 	$(this).css({'left':'2000px'}, 3000);
+		// 	$('#top-border-scroll').css({'left': '0px'}, 3000);
+		// });
 
-		$('#top-border-scroll').on('mouseenter', function () {
+		// $('#top-border-scroll').on('mouseenter', function () {
 
-			$(this).css({'left':'2000px'}, 3000);
-			$('#border-scroll').css({'left': '0px'}, 3000);
-		});
+		// 	$(this).css({'left':'2000px'}, 3000);
+		// 	$('#border-scroll').css({'left': '0px'}, 3000);
+		// });
 
 		// LIGHTBOX******************************
 
