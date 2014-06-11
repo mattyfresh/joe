@@ -211,12 +211,6 @@ nav {
 #blue-wrapper:hover{
 	background-color: lightblue;
 	box-shadow: -2px 10px 20px 1px lightblue, -2px -10px 20px 1px lightblue;
-
-}
-#blue-wrapper-two:hover{
-	background-color: lightblue;
-	box-shadow: -2px 10px 20px 1px lightblue, -2px -10px 20px 1px lightblue;
-	
 }
 
 #row1 {
@@ -360,7 +354,7 @@ footer:hover {
 
 	position: absolute;
 	left: 20px;
-	top: 16px;
+	top: 34px;
 	width: 100%;
 	opacity: .6;
 	color: black;
@@ -433,7 +427,13 @@ footer:hover {
 	display: inline-block;
 	padding: 20px;
 	margin: 20px;
-	border: 2px dashed white;
+	border: 0px dashed white;
+	transition: border 1s;
+}
+
+#large-media-icons li:hover {
+
+	border: 4px dashed white;
 }
 
 
