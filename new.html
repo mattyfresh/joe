@@ -254,6 +254,8 @@
 		//RANDOM QUOTE***************************
 
 		
+		/*
+
 		var one = $('#quote');
 		var two = $('#quote-two');
 		var three = $('#quote-three');
@@ -268,20 +270,22 @@
 		var twelve = $('#quote-twelve');
 		
 		var quotes = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve];
+		
+
+
+		*/
+
+		// $('.rand-quotes:nth('+[Math.floor(Math.random() * $('.rand-quotes').length)]+')').show();
+
+		//put each quote with the class of rand-quotes into an array
+		var quotes = [];
+		$('.rand-quotes').each(function(){
+			//.push method populates array as it iterates over each object
+			quotes.push($(this));
+		});
+
 
 		var rand = quotes[Math.floor(Math.random() * quotes.length)];
-
-		// Fail safe, not necessary after Math.floor fix****************************************************************************************
-		
-		// if(rand == undefined){
-
-		// 	Getting random value is undefined so we put this here as a back up...
-
-
-		// 	alert('showed undefined');
-			
-		// 	two.show();
-		// }
 
 		rand.show();
 	
