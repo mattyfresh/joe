@@ -18,8 +18,11 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/new-main.css">
 <link rel="stylesheet" href="css/swipebox.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
 
 <!-- JS -->
@@ -52,9 +55,9 @@
 		<nav>
 			<ul id="menu">
 
-				<li onClick="homeButt()" id="home">Home</li>
-				<li onClick="resumeButt()" id="resume-button" >Resume</li>
-				<li onClick="myLightBox()" id="lightbox-button">Contact</li>
+				<li onClick="homeButt()" id="home"><i class="fa fa-home fa-2x"></i></li>
+				<li onClick="resumeButt()" id="resume-button" ><i class="fa fa-pied-piper-alt fa-2x"></i></li>
+				<li onClick="myLightBox()" id="lightbox-button"><i class="fa fa-phone fa-2x"></i></li>
 
 			</ul>
 			<h5 id="mobile-contact" onClick="myLightBox()">Contact</h5>
@@ -127,21 +130,7 @@
 						</div>
  						-->
 
-				<div id="blue-wrapper">
-					<div id="row1">
-						<ul>
-							<li><a href="img/awkward.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade" src="img/awkward.jpeg"></a> </li>
-							<li><a href="img/spread-eagle.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/spread-eagle.jpeg"></a></li>
-
-							<li><a href="img/jump.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade swipe" src="img/jump.jpeg"></a></li>
-							<li><a href="img/pole-position.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/pole-position.jpeg"></a></li>
-						</ul>			
-					</div>
-				</div>
-
-			
-
-				<div id="about-me-wrapper">
+ 				<div id="about-me-wrapper">
 
 					<p id="about-me">
 					Joseph Cappelli is a NYC based actor who has appeared in many off Broadway and Regional productions (Ghost of war at Theatre Row Studios, Paradise, Comedy of Errors), Television (I Married a Mobster) and commercials (FourSquare).
@@ -160,6 +149,24 @@
 
 
 					</p>
+
+
+				</div>
+
+			</div>
+
+				<div id="blue-wrapper">
+					<div id="row1">
+						<ul>
+							<li><a href="img/awkward.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade" src="img/awkward.jpeg"></a> </li>
+							<li><a href="img/spread-eagle.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/spread-eagle.jpeg"></a></li>
+
+							<li><a href="img/jump.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade swipe" src="img/jump.jpeg"></a></li>
+							<li><a href="img/pole-position.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/pole-position.jpeg"></a></li>
+						</ul>
+
+							
+				
 						<div id="circle-one">
 
 						</div>
@@ -167,12 +174,15 @@
 
 						</div>
 						<div id="circle-three">
+			
 
-						</div>
 
+						</div>			
+					</div>
 				</div>
 
-		</div>
+
+				
 
 
 			<div id="resume-container">
@@ -207,9 +217,9 @@
 					<ul id="social-media">
 
 
-						<li><a class="social-icons" href="http://joecappellisaves.com" target="_blank"><img src="img/poetry.png"></li>
-						<li><a class="social-icons" href="https://twitter.com/cojappelli"><img src="img/twitter.png"></a></li>
-						<li><a class="social-icons" href="http://vinebox.co/u/wyP4c0GEn0Q"><img src="img/vine.png"></a></li>
+						<li><a class="social-icons" href="http://joecappellisaves.com" target="_blank"><i class="fa fa-tree fa-3x"></i></li>
+						<li><a class="social-icons" href="https://twitter.com/cojappelli"><i class="fa fa-twitter fa-3x"></i></a></li>
+						<li><a class="social-icons" href="http://vinebox.co/u/wyP4c0GEn0Q"><i class="fa fa-vine fa-3x"></i></a></li>
 
 					<ul>
 
@@ -232,20 +242,6 @@
 		$('#mobile-contact').addClass('animated fadeInRight');
 		$('#circle-three').addClass('animated pulse');
 
-		// JQUERY BORDER-SCROLL EFFECT*******
-
-		// $('#border-scroll').on('mouseenter', function () {
-
-		// 	$(this).css({'left':'2000px'}, 3000);
-		// 	$('#top-border-scroll').css({'left': '0px'}, 3000);
-		// });
-
-		// $('#top-border-scroll').on('mouseenter', function () {
-
-		// 	$(this).css({'left':'2000px'}, 3000);
-		// 	$('#border-scroll').css({'left': '0px'}, 3000);
-		// });
-
 		// LIGHTBOX******************************
 
 		$('.swipe').swipebox();
@@ -253,28 +249,7 @@
 		
 		//RANDOM QUOTE***************************
 
-		
-		/*
-
-		var one = $('#quote');
-		var two = $('#quote-two');
-		var three = $('#quote-three');
-		var four = $('#quote-four');
-		var five = $('#quote-five');
-		var six = $('#quote-six');
-		var seven = $('#quote-seven');
-		var eight = $('#quote-eight');
-		var nine = $('#quote-nine');
-		var ten = $('#quote-ten');
-		var eleven = $('#quote-eleven');
-		var twelve = $('#quote-twelve');
-		
-		var quotes = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve];
-		
-
-
-		*/
-
+	
 		// $('.rand-quotes:nth('+[Math.floor(Math.random() * $('.rand-quotes').length)]+')').show();
 
 		//put each quote with the class of rand-quotes into an array
@@ -288,6 +263,8 @@
 		var rand = quotes[Math.floor(Math.random() * quotes.length)];
 
 		rand.show();
+
+
 	
 	});
 
@@ -343,10 +320,29 @@
 
 				$('#contact-div').hide();
 
-				}, 2000);	
+				}, 1000);	
 				
 
 					});
+
+
+			//Use esc key to close lightbox
+			
+
+			$(document).keyup(function(e) {
+
+					if (e.keyCode == 27) {
+
+
+						$('#contact-div').animate({'opacity': '0'}, 1000);
+							setTimeout(function() {
+							$('#contact-div').hide();
+							}, 1000);
+
+					};
+
+			});
+
 
 		}
 
