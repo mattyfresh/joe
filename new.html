@@ -13,7 +13,7 @@
 
 <!-- CSS -->
 
-
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/new-main.css">
@@ -22,7 +22,7 @@
 <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="css/font-awesome.min.css">
+
 
 
 <!-- JS -->
@@ -56,7 +56,7 @@
 			<ul id="menu">
 
 				<li onClick="homeButt()" id="home"><i class="fa fa-home fa-2x"></i></li>
-				<li onClick="resumeButt()" id="resume-button" ><i class="fa fa-pied-piper-alt fa-2x"></i></li>
+				<li onClick="resumeButt()" id="resume-button" ><i class="fa fa-list-ul fa-2x"></i></li>
 				<li onClick="myLightBox()" id="lightbox-button"><i class="fa fa-phone fa-2x"></i></li>
 
 			</ul>
@@ -155,14 +155,14 @@
 
 			</div>
 
-				<div id="blue-wrapper">
+				<div id="photo-wrapper">
 					<div id="row1">
 						<ul>
-							<li><a href="img/awkward.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade" src="img/awkward.jpeg"></a> </li>
-							<li><a href="img/spread-eagle.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/spread-eagle.jpeg"></a></li>
+							<li><a href="img/awkward.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade" src="img/awkward.jpeg"></a><span>Scissor kick!</span></li>
+							<li><a href="img/spread-eagle.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/spread-eagle.jpeg"></a><span>Eagle fly!</span></li>
 
-							<li><a href="img/jump.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade swipe" src="img/jump.jpeg"></a></li>
-							<li><a href="img/pole-position.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/pole-position.jpeg"></a></li>
+							<li><a href="img/jump.jpeg" class="swipe" rel="gallery-one"><img class="awk-picture fade swipe" src="img/jump.jpeg"></a><span>Meh...</span></li>
+							<li><a href="img/pole-position.jpeg" rel="gallery-one" class="swipe"><img class="awk-picture fade swipe" src="img/pole-position.jpeg"></a><span>Pole jammed in my butt.</span></li>
 						</ul>
 
 							
@@ -195,10 +195,10 @@
 
 				<ul id= "large-media-icons">
 
-					<li><a href="https://www.facebook.com/joe.cappelli" target="_blank"><img src="img/facebook-large.png"/></a></li>
+					<h1>Contact.</h1>
+					<li><a href="mailto:joecappelli@google.com?Subject=Something%20Clever!" target="_top"><img src="img/email-large.png"/></a></li>
 					<li><a href="https://twitter.com/cojappelli" target="_blank"><img src="img/twitter-large.png"/></a></li>
 					<li><a href="http://vinebox.co/u/wyP4c0GEn0Q" target="_blank"><img src="img/vine-large.png"/></a></li>
-
 				</ul>
 
 
@@ -241,6 +241,7 @@
 		$('#secondary').addClass('animated fadeIn');
 		$('#mobile-contact').addClass('animated fadeInRight');
 		$('#circle-three').addClass('animated pulse');
+		$('li span').addClass('animated fadeIn');
 
 		// LIGHTBOX******************************
 
